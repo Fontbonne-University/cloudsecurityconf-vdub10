@@ -19,6 +19,12 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 class RegistrationController {
 
+    @RequestMapping("/Class_File")
+    String getLanding(){
+        return "Class_File";
+    }
+
+
     @Autowired
     AttendeeService attendeeService;
 
