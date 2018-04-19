@@ -36,6 +36,7 @@ class RegistrationController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
+    //conference
     public String conference(Model model) {
         model.addAttribute("attendee", new Attendee());
         return "program";
